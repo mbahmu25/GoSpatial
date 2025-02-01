@@ -34,7 +34,7 @@ func main() {
 }
 
 func readFile() {
-	var fileName string = "line.shp"
+	var fileName string = "sampleData/polyline/line.shp"
 	file, errFile := os.Open(fileName)
 	stat, errStat := os.Stat(fileName)
 	defer file.Close()
